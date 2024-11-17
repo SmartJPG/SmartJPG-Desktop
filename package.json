@@ -1,0 +1,29 @@
+{
+  "name": "smartjpg",
+  "version": "1.0.0",
+  "main": "main.js",
+  "build": {
+    "appId": "com.smartjpg.desktop",
+    "productName": "SmartJPG",
+    "mac": {
+      "icon": "assets/icon.icns",
+      "target": "dmg"
+    },
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": "nsis"
+    },
+    "linux": {
+      "icon": "assets/icon.png",
+      "target": "AppImage"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  }
+}
