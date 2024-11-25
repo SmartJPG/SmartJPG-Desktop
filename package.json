@@ -5,9 +5,18 @@
   "build": {
     "appId": "com.smartjpg.desktop",
     "productName": "SmartJPG",
+    "files": [
+      "main.js",
+      "assets/**/*",
+      "node_modules/**/*",
+      "!dist/**/*"
+    ],
     "mac": {
       "icon": "assets/icon.icns",
-      "target": "dmg"
+      "target": "dmg",
+      "hardenedRuntime": true,
+      "entitlements": "entitlements.mac.plist",
+      "entitlementsInherit": "entitlements.mac.plist"
     },
     "win": {
       "icon": "assets/icon.ico",
